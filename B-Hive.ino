@@ -4,8 +4,8 @@
 #include <FirebaseESP32.h>
 #include <DHT.h>
 
-#define FIREBASE_HOST "https://projekt-44540-default-rtdb.europe-west1.firebasedatabase.app/"
-#define FIREBASE_AUTH "AIzaSyCDWlbbSpOdiesrwdaaKrpvAz8TM3w0u9c"
+#define FIREBASE_HOST "Odkaz"
+#define FIREBASE_AUTH "API"
 #define WIFI_SSID "Název sítě"
 #define WIFI_PASSWORD "Heslo sítě"
 
