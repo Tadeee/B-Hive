@@ -1,0 +1,10 @@
+Aplikace B-Hive je realizována za pomocí vývojové desky ESP32-WROOM-32 ke které jsou připojeny senzory DHT22, Infračervený senzor plamene, a ultrazvukový snímač HY-SRF05
+ESP32 se přes internet připojí na databázi Firebase, kde bude ukládat hodnoty v reálném čase.
+K těmto datům bychom se dostali přes mobilní aplikaci zvanou B-Hive, aby se mohl uživatel dostat k datům kdykoli a kdekoli.
+Aplikace by byla volně dostupná jak pro Android tak i iOS.
+
+
+Samotné zařízení by bylo napájeno 20000 mAh powerbankou, což odpovídá zhruba 4 dnům nepřetržitého používání. Avšak toto zařízení by se dalo upravit tak, aby fungovalo mnohem déle na jedno nabití.
+Na desce budou přímo připojené modůly zvané DHT22 - pro snímání teploty a vlhkosti vzduchu, HY-SRF05 - pro ultrazvukové snímání nežádáného vetřelce (Ujistil jsem se, že včely nebudou mít žádnou reakci na ultrazvuk) a OZ LM393 - Infračervený senzor plamene pro případ rizika plamene v suchém období.
+Samotná deska bude přes zabudovaný internetový modem periodicky zasílat zaznamenané data do databáze zvané firebase.
+Databáze bude fungovat jako úložiště dat, které se následně budou zobrazovat v naší prototypové mobilní aplikaci B-Hive.
